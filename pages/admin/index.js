@@ -1,0 +1,5 @@
+function AdminPostsPage() {
+  return <main>AdminPostsPage</main>;
+}
+
+export default AdminPostsPage;
