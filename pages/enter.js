@@ -1,10 +1,13 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useContext } from "react";
+import { UserContext } from "../lib/context";
 import { googleAuthProvider } from "../lib/firebase";
 
 const auth = getAuth();
 function EnterPage({}) {
-  const user = null;
-  const username = null;
+  // const user = null;
+  // const username = null;
+  const { user, username } = useContext(UserContext);
 
   // 1. User signed out <SignInButton/>
   // 2. User signed in, but missing username <UsernameForm/>
